@@ -69,6 +69,12 @@
             </div>
             <div class="project">
                 <div class="project-description">
+                    <h3>MHA-to-MLA Conversion for KV Cache Compression in Branchformer for ASR</h3>
+                    <p>Developed an SVD-based conversion pipeline to replace multi-head attention (MHA) with multi-head latent attention (MLA) in Conformer-based ASR models, compressing key-value projections into low-rank latent representations. Implemented data-efficient fine-tuning with frozen feature extractors, enabling conversion of pre-trained models without full retraining. Achieved 50% reduction in KV cache memory (187.50 MB → 93.75 MB for 1000-frame sequences) while attaining 7.60% WER on LibriSpeech test-clean — outperforming the Branchformer baseline (8.11% WER) despite training on only 50% of the data.</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-description">
                     <h3>Multimodal Skip-Gram Video + Audio Representation Learning</h3>
                     <p>Designed discrete-token skip-gram pipeline that quantizes 16-frame video clips with VQ-GAN and co-occurring audio with BEATS, then learns dual embeddings that align inter-modal and intra-modal context while remaining lightweight and hyper-parameter-lean. Delivered state-of-the-art intrinsic quality: trained visual embeddings achieve a class-separation ratio increase by >50% and cluster-overlap decrease by >30% vs. CLIP on UCF-101, visualised via t-SNE. Strong downstream performance: a frozen DINOv2 encoder plus 4-layer MLP, powered by our tokens, reaches 85.7% top-1 accuracy on UCF-101 with minimal compute, matching larger supervised models.</p>
                 </div>
